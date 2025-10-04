@@ -36,6 +36,7 @@ let gameRunning = false;
 let gamePaused = false;
 let dropInterval = 1000;
 let lastDropTime = 0;
+let spaceKeyPressed = false;
 
 // Canvas elements
 const canvas = document.getElementById('game-canvas');

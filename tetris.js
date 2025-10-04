@@ -4,13 +4,13 @@ const ROWS = 20;
 const BLOCK_SIZE = 30;
 const COLORS = [
     null,
-    '#FF0D72', // I
-    '#0DC2FF', // J
+    '#3877FF', // I
+    '#FFE138', // J
     '#0DFF72', // L
     '#F538FF', // O
     '#FF8E0D', // S
-    '#FFE138', // T
-    '#3877FF'  // Z
+    '#0DC2FF', // T
+    '#FF0D72', // Z
 ];
 
 // Tetromino shapes

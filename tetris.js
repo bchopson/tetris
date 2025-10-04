@@ -337,7 +337,10 @@ document.addEventListener('keydown', (e) => {
             break;
         case ' ':
             e.preventDefault();
-            hardDrop();
+            if (!spaceKeyPressed) {
+                spaceKeyPressed = true;
+                hardDrop();
+            }
             break;
         case 'p':
         case 'P':
@@ -347,6 +350,13 @@ document.addEventListener('keydown', (e) => {
     
     drawBoard();
     drawPiece();
+});
+
+// Reset space key flag when released
+document.addEventListener('keyup', (e) => {
+    if (e.key === ' ') {
+        spaceKeyPressed = false;
+    }
 });
 
 // Button event listeners
